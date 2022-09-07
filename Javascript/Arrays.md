@@ -80,7 +80,40 @@ array.splice(2,0,3);
 //This will add the elements  3 to the new array element
 //The first element is the index where you want the new element to be placed
 //The second element is how many elements you want to delete
-//The third element is the actual element you want placed in the element
+//The third element is the actual element you want placed in the array
 ```
 
 
+###Removing items  in general
+
+- We can do this usign the `.splice()` method
+
+```js
+var array = [1, 2, 'mistake', 3];
+array.splice(2, 1);
+//The first element is  the indexx we want to start working at 
+//The second element is how many elements we want to be deleted 
+//Should output a new array that gets rid of the mistake value
+```
+
+###Removing and adding elements in an array
+ 
+ - Still going to be using the `.splice()` method
+
+```js
+let array = [1,2,'mistake','mistake',];
+array.splice(2,2,3,4);
+//This code is saying start at the second index, then the next value is telling the computer to delete2 elements after that index, the following two numbers are what are going to replace those mistake values
+
+// If console logged should output 1 2 3 4
+```
+
+###Slicing a portion of an array
+
+- Were going to do this by using the `.slice()` method
+
+```js
+let array = [1,2,3,4];
+let slicedArray = array.slice(0,2);
+//should output [1,2];
+```
