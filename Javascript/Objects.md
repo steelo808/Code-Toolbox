@@ -79,3 +79,96 @@ var user = {
 var resultObj = returnObj(user);
 console.log('returned Object: ' resultObj);
 ```
+
+###Reassigning a properties value in an object
+
+- Objects like array are mutable which means it's inner content can be changed.
+
+```js
+var object = {
+    firstMonth:'January',
+    secondMonth: 'March',
+    thirdMonth:'March'
+};
+
+object['secondMonth'] = 'Febuary';
+console.log(object);
+
+//Example of March being seleced and changed to febuary 
+//To select objects you have to use bracket notation
+```
+
+###Nested Objects
+
+```js
+var user = {
+  "id": 3,
+  "name": "Clementine Bauch",
+  "username": "Samantha",
+  "email": "Nathan@yesenia.net",
+  "address": {
+    "street": "Douglas Extension",
+    "suite": "Suite 847",
+    "city": "McKenziehaven",
+    "zipcode": "59590-4157",
+    "geo": {
+      "lat": "-68.6102",
+      "lng": "-47.0653"
+    }
+  },
+  "phone": "1-463-555-4447",
+  "website": "ramiro.info",
+  "company": {
+    "name": "Romaguera-Jacobson",
+    "catchPhrase": "Face to face bifurcated interface",
+    "corporate_tagline": "e-enable strategic applications"
+  }
+};
+
+console.log(user['id']);
+console.log(user['name']);
+console.log(user['email']);
+
+let userAddress = user['address'];
+console.log(userAddress['street']);
+console.log(userAddress['suite']);
+console.log(userAddress['city']);
+console.log(userAddress['zipcode']);
+
+let geoLoc = userAddress['geo'];
+console.log(geoLoc['lat']);
+console.log(geoLoc['lng']);
+
+console.log(user['phone']);
+console.log(user['website']);
+
+let company = user['company'];
+console.log(company['name']);
+console.log(company['catchPhrase']);
+console.log(company['corporate_tagline']);
+```
+
+
+
+
+```js
+function selectShirtSize(choice){
+   // if shirt is greater than or equal 20 and less than 30
+    // return 'You should select a size S'
+  // otherwise if shirt is greater than or equal to 30 and less than 40
+    // return 'You should select a size M'
+  // otherwise if shirt is greater than or equal to 40 and less than 50
+    // return 'You should select a size L'
+  // otherwise
+    // return 'You should select a different shirt'
+  if (choice >= && choice < 30){
+    return 'You should select a size S';
+  }else if (choice >= 30 || choice < 40 ){
+    return 'You should select a size M';
+  }else if (choice >= 40 && choice < 50 ) {
+    return 'You should select a size L';
+  } else{
+    return 'you should select a different size';
+  }
+}
+```
