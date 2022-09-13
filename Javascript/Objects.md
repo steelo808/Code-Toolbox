@@ -25,7 +25,7 @@ var stringObj{
 };
 ```
 
-###Accessing the value of a property
+### Accessing the value of a property
 
 - We need to know the name of the object.
 - Can use "dot notation".
@@ -46,7 +46,7 @@ console.log('acssessed value: ' valueOfName);
 
 ```
 
-###Using Bracket notation
+### Using Bracket notation
 
 ```js
 var stringObj ={
@@ -62,7 +62,7 @@ console.log('Accessed value: ' valueOfName);
 ```
 
 
-###Returning Values for functions
+### Returning Values for functions
 
 ```js
 //Declaring a function that takes a parameter and returns it
@@ -80,7 +80,7 @@ var resultObj = returnObj(user);
 console.log('returned Object: ' resultObj);
 ```
 
-###Reassigning a properties value in an object
+### Reassigning a properties value in an object
 
 - Objects like array are mutable which means it's inner content can be changed.
 
@@ -98,7 +98,7 @@ console.log(object);
 //To select objects you have to use bracket notation
 ```
 
-###Nested Objects
+### Nested Objects
 
 ```js
 var user = {
@@ -169,6 +169,71 @@ function selectShirtSize(choice){
     return 'You should select a size L';
   } else{
     return 'you should select a different size';
+  }
+}
+```
+
+
+
+```js
+function verifyStock(recipeMinimums, stockTomatoes, stockOnions) {
+  // if stock of tomatoes and stock of onions are both less than minimum
+
+    // return 'We need more tomatoes and more onions.'
+  
+  // otherwise if stock of tomatoes is less than minimum but stock of onions is sufficient
+    // return 'We have enough onions, but need more tomatoes.'
+  
+  // otherwise if stock of tomatoes is sufficient but stock of onions is less than minimum
+   
+   // return 'We have enough tomatoes, but need more onions.'
+  
+  // otherwise
+    // return 'We have enough tomatoes and onions. There will be {excessTomatoes} extra tomato, and {excessOnions} extra onion.'
+
+let availTomatoes = recipeMinimums['tomatoes'];
+let availOnions = recipeMinimums['onions'];
+
+let totalTomatoes = stockTomatoes - availTomatoes;
+let totalOnions = stockOnions - availOnions;
+
+if (stockTomatoes <= availTomatoes && stockOnions <= availOnions){
+  return 'We need more tomatoes and more onions.';
+}else if(stockTomatoes <= availTomatoes && stockOnions >= availOnions){
+  return 'We have enough onions, but need more tomatoes.';
+}else if (stockTomatoes >= availTomatoes && stockOnions <= availOnions){
+  return 'We have enough tomatoes, but need more onions.';
+}else {
+  return 'We have enough tomatoes and onions. There will be ' + availTomatoes + ' extra tomato, and ' + availOnions + ' extra onion.'
+}
+}
+
+```
+
+'We have enough tomatoes and onions. There will be ' + stockTomatoes + ' extra tomato, and ' + stockOnions + ' extra onion.'
+
+(100 - 90) --> 'A'
+(89 - 80) --> 'B'
+(79 - 70) --> 'C'
+(69 - 60) --> 'D'
+(59 - 0) --> 'F'
+If the given score is greater than 100 or less than 0, it should return 'INVALID SCORE'.
+
+```js
+function convertScoreToGrade(score) {
+  // your code here
+  if(score >= 90){
+    return 'A';
+  }else if (score >= 80 && score <= 89){
+    return 'B';
+  }else if (score >= 70 && score <= 79){
+    return 'C';
+  }else if (score >= 60 && score <= 69){
+    return 'D';
+  }else if (score >= 0 && score <= 59){
+    return 'F';
+  }else{
+    return 'INVALID SCORE';
   }
 }
 ```

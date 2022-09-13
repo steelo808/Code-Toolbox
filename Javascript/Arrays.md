@@ -1,8 +1,8 @@
-#Arrays
+# Arrays
 
 - Used to store an ordered list of multiple values in a single variable
 
-###Creating an array
+### Creating an array
 
 ```js
 var fruits  = ['Oranges', 'bananas', 'apples'];
@@ -10,7 +10,7 @@ var scores = [98, 85, 91, 78, 82];
 var empty [];
 ```
 
-###Accessing an Array element
+### Accessing an Array element
  ```js
  var array = [1,2,3,4];
  var index = array[1];
@@ -18,7 +18,7 @@ var empty [];
  ```
 
 
-###Getting the last element of an array
+### Getting the last element of an array
 
 ```js
 var array = [1,2,3,4,5];
@@ -26,7 +26,7 @@ var lastElement = array.length - 1;
 //Variable lastElement should equal 5 
 ```
 
-###Adding elements to the back of an array
+### Adding elements to the back of an array
 
 - we can do this using the `.push()` method
 
@@ -36,7 +36,7 @@ array.push(6);
 // if console logged will return an array 1-6;
 ```
 
-###Removing an element from the back of an array
+### Removing an element from the back of an array
 
 - We can do this using the .pop() method
 
@@ -47,7 +47,7 @@ array.pop()
 ```
 
 
-###Adding Element to front of array 
+### Adding Element to front of array 
 
 - we can do this using the `.unshift()` method
 
@@ -57,7 +57,7 @@ array.unshift(1);
 // This will add 1 to the front of the array
 ```
 
-###Removing an element from the front of an array
+### Removing an element from the front of an array
 
 - We can do this by using the `.shift()` method 
 
@@ -67,7 +67,7 @@ array.shift();
 //This will remove the first element of the array
 ```
 
-###Adding an element in general
+### Adding an element in general
 
 - lets consider the case of wanting to add an element , without reaplacing anything, to an existing element.
 
@@ -84,7 +84,7 @@ array.splice(2,0,3);
 ```
 
 
-###Removing items  in general
+### Removing items  in general
 
 - We can do this usign the `.splice()` method
 
@@ -96,7 +96,7 @@ array.splice(2, 1);
 //Should output a new array that gets rid of the mistake value
 ```
 
-###Removing and adding elements in an array
+### Removing and adding elements in an array
  
  - Still going to be using the `.splice()` method
 
@@ -108,7 +108,7 @@ array.splice(2,2,3,4);
 // If console logged should output 1 2 3 4
 ```
 
-###Slicing a portion of an array
+### Slicing a portion of an array
 
 - Were going to do this by using the `.slice()` method
 
