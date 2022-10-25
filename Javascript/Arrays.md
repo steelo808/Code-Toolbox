@@ -117,3 +117,37 @@ let array = [1,2,3,4];
 let slicedArray = array.slice(0,2);
 //should output [1,2];
 ```
+
+
+```js
+ if(array.length === 0){
+      return undefined;
+  }
+  
+  
+  let nthElement;
+  
+  //itteration over array
+  
+ for(let i === 0; i < array.length; i++){
+     if (array[i] === array[n]){
+         nthElement = array[i];
+     }
+ }
+  
+  return nthElement;
+```
+
+
+### Adding the contenct of an array to another array
+
+
+```js
+var array1 = [1,2,3];
+var array2 = [4,5,6];
+var array3 = [7,8,9];
+//concatination
+
+let combinedArray = array1.concat(array2)/
+//should return 1,2,3,4,5,6
+```

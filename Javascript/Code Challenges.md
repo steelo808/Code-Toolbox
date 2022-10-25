@@ -201,9 +201,71 @@ console.log('should log "{}":', result2);
 ```
 
 
-### Skills Check redux
+
+
+
+# Advanced 1 Count Words
+- Write a function called "countWords".
+
+- Given a string, "countWords" returns an object where each key is a word in the given string, with its value being how many times that word appeared in the given string.
+
+- Notes:
+
+- If given an empty string, it should return an empty object.
 ```js
-let myArray = [];
+function countWords(str){
+
+
+    //edge case
+
+    if (str === ''){
+        return {};
+    }
+    //
+    let words = str.split(' ');
+    let count = {};
+    
+    for(let i === 0; i < words.length; i++){
+        let currentWord = words[i];
+        if (count[currentWord] === undefined){
+            count[currentWord] = 1;
+        }else{
+            count[currentWord]++;
+        }
+    }
+
+}
+
+
+```
+
+### Extend challenge
+
+```js 
+
 ```
 
 
+
+### Remove numbers larger than 
+
+```js
+for( let key in obj){
+let currentValue = obj[key];
+if(currentValue > num){
+    delete currentValue;
+}
+}
+```
+
+
+
+
+#
+
+
+```js
+creating an array
+
+let arr = [1,3,4,3];
+```
