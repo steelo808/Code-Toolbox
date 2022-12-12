@@ -68,7 +68,7 @@ console.log(obj2); // --> {b: 4, c: 3}
 
 
 
-#higher order functions
+# higher order functions
 
 
 ```js
@@ -91,4 +91,18 @@ const checkConsistentOutput = (func, val) =>{
 
 console.log(checkConsistentOutput(addTwo, 5));
 
+```
+
+
+# iterators
+
+
+### Using the `.forEach()` method
+
+```js
+const groceries = ['brown sugar', 'salt', 'cranberries', 'walnuts'];
+
+groceries.foreach(function(groceryItem){
+console.log(' - ' + groceryItem);
+});
 ```
