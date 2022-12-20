@@ -1,0 +1,4 @@
+Hello Michael! My name is Ilsa Hampton I am an entry-level software engineer interested in potentially applying for a role with Citrix. I was hoping to gain some insights on the application process and available roles to be on the look out for. 
+
+Thanks for your time and any advice!
+Thanks for getting back to me so quickly! I think my biggest questions are: 1) what do you feel was the biggest challenge in the interview process for you? 2) How do feel about your transition into your workplace with Citrix? (ie is it a steep learning curve, feels welcoming etc) and lastly 3) what excites you the most about working for Citrix?
