@@ -109,3 +109,34 @@ hello = (val) => "Hello " + val;
 
 hello = val => "Hello " + val'
 ```
+
+### React ES6 Array Methods
+-  The most useful Array method in react is the `.map()` array mehtod 
+- The `.map()` mehtod allows tyou to calla function on each array element 
+```js
+//example
+const myArray = ['apple','bannana','orange'];
+const myList = myArray.map((item) => <p>{item}</p>)
+```
+
+### REACT ES6 Destructuring 
+
+- Destructuring is like making a sandwich when you go into your refrigerator you only get the stuff you need destructuring is the same concept
+
+- destructuring makes it easy to extract only what needed
+
+```js
+// old way of destrucuring arrays
+const vehicles = ['mustang', 'f-150', 'expidition'];
+
+const car = vehicles[0];
+const truck = vehicles[1];
+const suv = vehicles[2];
+
+
+//with destructuring
+const vehicles = ['mustang', 'f-150', 'expidition'];
+const [car, truck, suv] = vehicles;
+```
+
+- Destructurign comes in handy when a function returns an array
